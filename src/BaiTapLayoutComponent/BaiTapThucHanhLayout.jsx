@@ -1,6 +1,7 @@
 // rcc
 import React, { Component } from 'react'
 import Banner from './Banner'
+import Footer from './Footer'
 import Item from './Item'
 import Logo from './Logo'
 import Navbar from './Navbar'
@@ -33,7 +34,11 @@ export default class BaiTapThucHanhLayout extends Component {
                 </div>
             </div>
         </section>
-        <footer></footer>
+        <footer className='bg-dark text-white'>
+            <div className='container p-5'>
+                <Footer/>
+            </div>
+        </footer>
       </div>
     )
   }
