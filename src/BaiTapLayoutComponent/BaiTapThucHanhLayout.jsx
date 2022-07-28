@@ -1,5 +1,7 @@
 // rcc
 import React, { Component } from 'react'
+import Banner from './Banner'
+import Item from './Item'
 import Logo from './Logo'
 import Navbar from './Navbar'
 
@@ -17,9 +19,19 @@ export default class BaiTapThucHanhLayout extends Component {
                 </nav>
             </div>
         </header>
-        <section className='body'>
-            <div>Banner</div>
-            <div>Item</div>
+        <section className='banner'>
+            <div className='container'>
+                <div>
+                    <Banner/>
+                </div>
+            </div>
+        </section>
+        <section className='item'>
+            <div className='container'>
+                <div>
+                    <Item/>
+                </div>
+            </div>
         </section>
         <footer></footer>
       </div>
